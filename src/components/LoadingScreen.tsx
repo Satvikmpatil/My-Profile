@@ -125,7 +125,7 @@ const LoadingScreen = () => {
           <h1 className="text-5xl md:text-7xl font-bold gradient-text mb-6">
             Satvik Patil
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 italic">i am just obsessed with my work</p>
+          <p className="text-xl md:text-2xl text-gray-300">i am just <span className="text-accent animate-pulse inline-block font-bold">obsessed</span> with my work</p>
         </div>
       </div>
       <div ref={threeContainerRef} className="absolute inset-0"></div>
