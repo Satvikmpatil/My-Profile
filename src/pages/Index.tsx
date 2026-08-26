@@ -101,7 +101,7 @@ const Index = () => {
 
   const handleResumeClick = () => {
     window.open(
-      "https://drive.google.com/file/d/1HSPC-ZcAtjxgpcpDuBsmeSH-KskzXmsj/view",
+      "https://drive.google.com/file/d/1GGX5T23izL3A6y15ryru8b7xPGYAj6Nc/view",
       "_blank"
     );
     toast({
@@ -121,6 +121,26 @@ const Index = () => {
   const toolsSkills = ["PostgreSQL", "Redis", "Docker", "AWS", "GitHub Actions"];
 
   const projects: Project[] = [
+    {
+      title: "Student Management REST API",
+      description:
+        "Fast, scalable REST API for managing student records with SQLite, clean architecture, request validation, and graceful shutdown handling.",
+      image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
+      github: "https://github.com/Satvikmpatil/Student-Management-REST-API-Fast-Scalable",
+      live: null,
+      tags: ["Go", "REST API", "SQLite", "Clean Architecture"],
+      category: "backend",
+    },
+    {
+      title: "Learning Go - Book Notes",
+      description:
+        "Notes and code from 'Learning Go' by Jon Bodner (2nd Ed) - all 16 chapters covering concurrency, generics, testing, context, and more.",
+      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+      github: "https://github.com/Satvikmpatil/Golang",
+      live: null,
+      tags: ["Go", "Concurrency", "Generics", "Testing"],
+      category: "backend",
+    },
     {
       title: "Go Learning Journey",
       description:
@@ -396,7 +416,7 @@ const Index = () => {
             <div className="gsap-reveal">
               <div className="relative w-full aspect-square max-w-md mx-auto overflow-hidden rounded-2xl">
                 <img
-                  src="/1754134193903.jpeg"
+                  src="/profile.png"
                   alt="Satvik Patil"
                   className="w-full h-full object-cover rounded-full transition-transform duration-500"
                 />
@@ -412,10 +432,10 @@ const Index = () => {
 
             <div className="glass p-8 gsap-reveal">
               <h3 className="text-2xl font-semibold mb-4 text-white">
-                Aspiring Developer
+                Software Engineer
               </h3>
               <p className="text-gray-300 mb-6 leading-relaxed text-justify">
-Hi, I'm Satvik Patil. I completed my B.E. in CSE from Basaveshwar Engineering College and currently work as a Software Development Engineer I at Barracuda Networks. I specialize in building scalable backend services with Go, gRPC, and cloud-native technologies, while also crafting modern frontends with React and TypeScript.
+Hi, I'm Satvik Patil — Software Engineer 1 at Barracuda Networks, building cloud security products for OneDrive and SharePoint. I specialize in scalable backend services with Go, gRPC, and cloud-native technologies, while also crafting modern frontends with React and TypeScript.
               </p>
               <div className="border-l-4 border-accent pl-4 py-2">
                 <p className="text-gray-300 italic">
@@ -536,22 +556,57 @@ Hi, I'm Satvik Patil. I completed my B.E. in CSE from Basaveshwar Engineering Co
             Experience
           </h2>
 
-          <div className="max-w-3xl mx-auto glass p-8 gsap-reveal">
-            <div className="flex flex-col md:flex-row md:items-center gap-4 mb-6">
-              <h3 className="text-xl font-semibold text-white">
-                Software Development Engineer I
-              </h3>
-              <div className="md:ml-auto text-accent">Barracuda Networks</div>
+          <div className="space-y-6">
+            {/* Current Role */}
+            <div className="max-w-3xl mx-auto glass p-8 gsap-reveal">
+              <div className="flex flex-col md:flex-row md:items-center gap-4 mb-4">
+                <h3 className="text-xl font-semibold text-white">
+                  Software Engineer 1
+                </h3>
+                <div className="md:ml-auto text-accent">Barracuda Networks</div>
+              </div>
+              <div className="flex flex-col md:flex-row md:items-center gap-4 mb-4">
+                <div className="text-gray-400">Jul 2025 – Present</div>
+                <div className="md:ml-auto text-gray-400">Bengaluru</div>
+              </div>
+              <p className="text-gray-300 leading-relaxed text-justify">
+                Building cloud security products for OneDrive and SharePoint. Developing backend APIs using Go to improve reporting capabilities and system modularity. Building frontend features with React, Redux, and TypeScript.
+              </p>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-center gap-4 mb-6">
-              <div className="text-gray-400">Cybersecurity</div>
-              <div className="md:ml-auto text-gray-400">Bengaluru</div>
+            {/* Barracuda Internship */}
+            <div className="max-w-3xl mx-auto glass p-8 gsap-reveal">
+              <div className="flex flex-col md:flex-row md:items-center gap-4 mb-4">
+                <h3 className="text-xl font-semibold text-white">
+                  Software Developer Intern
+                </h3>
+                <div className="md:ml-auto text-accent">Barracuda Networks</div>
+              </div>
+              <div className="flex flex-col md:flex-row md:items-center gap-4 mb-4">
+                <div className="text-gray-400">Feb 2025 – Jun 2025</div>
+                <div className="md:ml-auto text-gray-400">Bengaluru</div>
+              </div>
+              <p className="text-gray-300 leading-relaxed text-justify">
+                Contributed to full-stack development of cloud security products. Built and optimized frontend features using React, Redux, and TypeScript.
+              </p>
             </div>
 
-            <p className="text-gray-300 leading-relaxed text-justify">
-              Building cloud security products for OneDrive and SharePoint. Developing backend APIs using Go to improve reporting capabilities and system modularity. Building frontend features with React, Redux, and TypeScript.
-            </p>
+            {/* Vealthx Internship */}
+            <div className="max-w-3xl mx-auto glass p-8 gsap-reveal">
+              <div className="flex flex-col md:flex-row md:items-center gap-4 mb-4">
+                <h3 className="text-xl font-semibold text-white">
+                  Web Developer Intern
+                </h3>
+                <div className="md:ml-auto text-accent">Vealthx</div>
+              </div>
+              <div className="flex flex-col md:flex-row md:items-center gap-4 mb-4">
+                <div className="text-gray-400">Jul 2024 – Jan 2025</div>
+                <div className="md:ml-auto text-gray-400">Remote</div>
+              </div>
+              <p className="text-gray-300 leading-relaxed text-justify">
+                Developed web applications for fintech platform providing innovative financial solutions.
+              </p>
+            </div>
           </div>
         </div>
       </section>
