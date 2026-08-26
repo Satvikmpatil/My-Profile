@@ -135,7 +135,7 @@ const Index = () => {
       title: "Learning Go - Book Notes",
       description:
         "Notes and code from 'Learning Go' by Jon Bodner (2nd Ed) - all 16 chapters covering concurrency, generics, testing, context, and more.",
-      image: "https://images.unsplash.com/photo-1532012197267-da84d127e765",
+      image: "/learning-go-cover.webp",
       github: "https://github.com/Satvikmpatil/Golang",
       live: null,
       tags: ["Go", "Concurrency", "Generics", "Testing"],
@@ -309,7 +309,7 @@ const Index = () => {
               isDarkMode ? "text-gray-300" : "text-gray-700"
             } animate-on-load`}
           >
-            Code • Cloud • Create
+            Imagine | Build | Deploy
           </p>
 
           <div className="flex justify-center gap-6 mb-12 animate-on-load">
