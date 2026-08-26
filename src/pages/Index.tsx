@@ -135,7 +135,7 @@ const Index = () => {
       title: "Learning Go - Book Notes",
       description:
         "Notes and code from 'Learning Go' by Jon Bodner (2nd Ed) - all 16 chapters covering concurrency, generics, testing, context, and more.",
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+      image: "https://images.unsplash.com/photo-1532012197267-da84d127e765",
       github: "https://github.com/Satvikmpatil/Golang",
       live: null,
       tags: ["Go", "Concurrency", "Generics", "Testing"],
