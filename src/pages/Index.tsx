@@ -101,7 +101,7 @@ const Index = () => {
 
   const handleResumeClick = () => {
     window.open(
-      "https://drive.google.com/file/d/1GGX5T23izL3A6y15ryru8b7xPGYAj6Nc/view",
+      "https://drive.google.com/file/d/1HSPC-ZcAtjxgpcpDuBsmeSH-KskzXmsj/view",
       "_blank"
     );
     toast({
