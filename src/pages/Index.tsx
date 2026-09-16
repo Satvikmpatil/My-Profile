@@ -122,13 +122,13 @@ const Index = () => {
 
   const projects: Project[] = [
     {
-      title: "Student Management REST API",
+      title: "SimpleBank Backend",
       description:
-        "Fast, scalable REST API for managing student records with SQLite, clean architecture, request validation, and graceful shutdown handling.",
-      image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
-      github: "https://github.com/Satvikmpatil/Student-Management-REST-API-Fast-Scalable",
+        "Complete banking backend with Go, Postgres, gRPC, and Kubernetes. Features account management, money transfers, JWT/PASETO auth, RBAC, Redis workers, and AWS deployment.",
+      image: "https://images.unsplash.com/photo-1501167786227-4cba60f6d58f",
+      github: "https://github.com/Satvikmpatil/backend",
       live: null,
-      tags: ["Go", "REST API", "SQLite", "Clean Architecture"],
+      tags: ["Go", "gRPC", "Postgres", "Kubernetes", "AWS"],
       category: "backend",
     },
     {
