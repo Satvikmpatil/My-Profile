@@ -101,7 +101,7 @@ const Index = () => {
 
   const handleResumeClick = () => {
     window.open(
-      "https://drive.google.com/file/d/1HSPC-ZcAtjxgpcpDuBsmeSH-KskzXmsj/view",
+      "https://drive.google.com/file/d/1_m3xyBdWRQQAMCeh-sHmrCaamqHM0fj1/view?usp=sharing",
       "_blank"
     );
     toast({
@@ -122,9 +122,9 @@ const Index = () => {
 
   const projects: Project[] = [
     {
-      title: "SimpleBank Backend",
+      title: "Banking Microservices Platform",
       description:
-        "Complete banking backend with Go, Postgres, gRPC, and Kubernetes. Features account management, money transfers, JWT/PASETO auth, RBAC, Redis workers, and AWS deployment.",
+        "Production-ready banking backend with Go, Postgres, gRPC, and Kubernetes. Features secure money transfers, JWT/PASETO auth, RBAC, Redis async workers, and AWS deployment.",
       image: "https://images.unsplash.com/photo-1501167786227-4cba60f6d58f",
       github: "https://github.com/Satvikmpatil/backend",
       live: null,
