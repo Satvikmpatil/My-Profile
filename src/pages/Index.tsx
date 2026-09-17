@@ -110,15 +110,14 @@ const Index = () => {
     });
   };
 
-  const languageSkills = ["Go", "Java", "JavaScript", "C"];
-  const frameworkSkills = [
-    "React",
-    "Redux",
-    "Gin",
-    "gRPC",
-    "REST APIs",
+  const skillCategories = [
+    { title: "Languages", skills: ["Go", "Java", "JavaScript", "C"] },
+    { title: "Frontend", skills: ["React", "Redux", "HTML", "CSS", "Figma"] },
+    { title: "Backend", skills: ["REST APIs", "gRPC", "gRPC Gateway", "Gin"] },
+    { title: "Database", skills: ["PostgreSQL", "Redis"] },
+    { title: "Cloud & DevOps", skills: ["AWS", "Docker"] },
+    { title: "Auth & Testing", skills: ["JWT", "PASETO", "Unit Testing", "gomock"] },
   ];
-  const toolsSkills = ["PostgreSQL", "Redis", "Docker", "AWS", "JWT/PASETO"];
 
   const projects: Project[] = [
     {
@@ -458,39 +457,19 @@ Hi, I'm Satvik Patil — Software Engineer 1 at Barracuda Networks, building clo
             Skills
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-10">
-            <div className="glass p-6 gsap-reveal">
-              <h3 className="text-xl font-semibold mb-4 text-center text-white">
-                Languages
-              </h3>
-              <div className="flex flex-wrap gap-2 justify-center">
-                {languageSkills.map((skill, index) => (
-                  <SkillTag key={index} name={skill} />
-                ))}
+          <div className="grid md:grid-cols-3 gap-6">
+            {skillCategories.map((category, catIndex) => (
+              <div key={catIndex} className="glass p-6 gsap-reveal">
+                <h3 className="text-xl font-semibold mb-4 text-center text-white">
+                  {category.title}
+                </h3>
+                <div className="flex flex-wrap gap-2 justify-center">
+                  {category.skills.map((skill, index) => (
+                    <SkillTag key={index} name={skill} />
+                  ))}
+                </div>
               </div>
-            </div>
-
-            <div className="glass p-6 gsap-reveal">
-              <h3 className="text-xl font-semibold mb-4 text-center text-white">
-                Frameworks
-              </h3>
-              <div className="flex flex-wrap gap-2 justify-center">
-                {frameworkSkills.map((skill, index) => (
-                  <SkillTag key={index} name={skill} />
-                ))}
-              </div>
-            </div>
-
-            <div className="glass p-6 gsap-reveal">
-              <h3 className="text-xl font-semibold mb-4 text-center text-white">
-                Tools
-              </h3>
-              <div className="flex flex-wrap gap-2 justify-center">
-                {toolsSkills.map((skill, index) => (
-                  <SkillTag key={index} name={skill} />
-                ))}
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
