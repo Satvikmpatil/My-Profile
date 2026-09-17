@@ -110,15 +110,15 @@ const Index = () => {
     });
   };
 
-  const languageSkills = ["Go", "TypeScript", "JavaScript", "Python", "Java"];
+  const languageSkills = ["Go", "Java", "JavaScript", "C"];
   const frameworkSkills = [
-    "Gin",
-    "gRPC",
     "React",
     "Redux",
-    "Tailwind CSS",
+    "Gin",
+    "gRPC",
+    "REST APIs",
   ];
-  const toolsSkills = ["PostgreSQL", "Redis", "Docker", "AWS", "GitHub Actions"];
+  const toolsSkills = ["PostgreSQL", "Redis", "Docker", "AWS", "JWT/PASETO"];
 
   const projects: Project[] = [
     {
